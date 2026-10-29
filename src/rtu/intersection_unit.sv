@@ -422,8 +422,10 @@ module intersection_unit #(
                             end
                             3'd2: begin
                                 sram_latch  <= 1'b1;
+                            end
                             3'd3: begin
                                 sram_latch  <= 1'b1;
+                            end
                             3'd4: begin
                                 sram_latch  <= 1'b1;
                             end
@@ -554,6 +556,8 @@ module intersection_unit #(
                                 // slot_i: null
 
                                 bv_r_ready <= 1'b1;
+
+                            end
                             3'd2: begin
                                 slot_c          <= sram_data; // bv_z
                                 // local register
